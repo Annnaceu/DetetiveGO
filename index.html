@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lan Analyzer - Detetive da Rede</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="detetive.png" alt="Detetive" class="logo-img">
+                <h1>Detetive da Rede</h1>
+    </header>
+
+    <main>
+        <section class="intro">
+            <div class="content-container">
+                <div class="image-wrapper lupa">
+                    <img src="lupa.png" alt="Lupa" class="image-item">
+                </div>
+                <div class="description">
+                    <h2>🔍 Descubra Dispositivos Ativos na Rede</h2>
+                    <p>Insira o IP base para escanear sua rede e identificar dispositivos conectados.</p>
+                </div>
+                <div class="image-wrapper detetive">
+                    <img src="detetive1.png" alt="Detetive" class="image-item">
+                </div>
+            </div>
+
+
+
+        </section>
+        
+        
+
+        <section class="form-section">
+            <form id="ipForm">
+                <input type="text" id="ipBase" placeholder="Ex: 192.168.29" required>
+                <button type="submit">Buscar Dispositivos</button>
+            </form>
+        </section>
+
+        <section class="devices-section">
+            <ul id="deviceList" class="device-list"></ul>
+            <div id="error" class="error hidden"></div>
+        </section>
+
+        <!-- Curiosidades -->
+        <section id="curiosidades" class="curiosidades">
+            <button class="curiosidades-button" onclick="toggleCuriosities()">Saiba Curiosidades sobre IPs</button>
+            <div id="curiositiesContent" class="hidden">
+                <div class="curiosidade-item">
+                    <h3>O que é um IP?</h3>
+                    <p>O IP (Protocolo de Internet) é um número único atribuído a cada dispositivo conectado à rede.</p>
+                </div>
+                <div class="curiosidade-item">
+                    <h3>Como Funciona a Rede?</h3>
+                    <p>Quando você insere um IP, o scanner busca dispositivos conectados dentro da mesma rede, permitindo identificar e interagir com eles.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2025 Detetive da Rede - Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
